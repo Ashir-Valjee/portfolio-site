@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -18,4 +18,54 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+} */
+/* 
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.bg-gradient {
+  @apply bg-gradient-to-r from-primary via-secondary to-accent;
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+} */
+
+/* styles/globals.css or inline styles in your component */
+/* styles/globals.css or inline styles in your component */
+/* styles/globals.css or inline styles in your component */
+@keyframes reflective-background {
+  0% {
+    background-position: -200%;
+  }
+  50% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.reflective-background {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  /* padding: 0.5rem 1rem; */
+  background: linear-gradient(
+    120deg,
+    rgba(206, 8, 58, 0.6),
+    rgba(206, 8, 58, 0.4),
+    rgba(206, 8, 58, 0.2),
+    rgba(206, 8, 58, 0.4),
+    rgba(206, 8, 58, 0.6)
+  );
+  background-size: 200% 100%;
+  animation: reflective-background 10s linear infinite;
+
+  border-radius: 0.5rem;
+  text-align: center;
 }

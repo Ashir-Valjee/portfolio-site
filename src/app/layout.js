@@ -1,4 +1,9 @@
 import localFont from "next/font/local";
+import NavBar from "@/components/Navbar";
+import Script from "next/script";
+import ThemeProvider from "@/context/ThemeContext";
+import ClientThemeWrapper from "@/context/ClientThemeWrapper";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -21,9 +26,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // data-theme="light"
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        {children}
+        <Script
+          src="https://kit.fontawesome.com/5d4d1c054f.js"
+          crossOrigin="anonymous"
+        ></Script>
+        <ThemeProvider>
+          <ClientThemeWrapper>
+            <div className="min-h-screen bg-base-200 px-2">
+              <NavBar />
+              {children}
+            </div>
+            {/* <Footer /> */}
+          </ClientThemeWrapper>
+        </ThemeProvider>
       </body>
     </html>
   );
