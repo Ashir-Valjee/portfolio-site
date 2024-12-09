@@ -8,7 +8,7 @@ import { Autoplay } from "swiper/modules";
 export default function Skills2() {
   return (
     <>
-      <div className="mb-10">
+      {/* <div className="mb-10">
         <Swiper
           loop={true}
           autoplay={{
@@ -36,16 +36,16 @@ export default function Skills2() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center mt-8 ">
         {/* {SkillData.map((skill, index) => (
           <p key={index} className="font-bold">
             {skill.name}
           </p>
         ))} */}
 
-        <div className="card bg-base-300 w-96 shadow-xl  ">
+        <div className="card bg-base-300 w-[95vw] max-w-96 shadow-xl  ">
           <div className="card-body">
             <div className="flex items-center justify-center">
               <h2 className="card-title">Skills</h2>
@@ -66,7 +66,7 @@ export default function Skills2() {
           </div>
         </div>
       </div>
-      <div className="mt-10">
+      <div className="mt-32">
         <Swiper
           loop={true}
           autoplay={{
