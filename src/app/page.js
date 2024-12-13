@@ -10,7 +10,7 @@ export default function HomePage() {
       {/* <h1 className="text-3xl">
         Hello I&#39;m Ashir Valjee&#44; web developer
       </h1> */}
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero bg-base-200 min-h-[calc(100vh-68px)]">
         {/* <Animation2 /> */}
         <div className="hero-content flex-col lg:flex-row-reverse lg:gap-20">
           <div className="avatar">

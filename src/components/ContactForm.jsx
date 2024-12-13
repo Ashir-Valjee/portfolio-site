@@ -34,7 +34,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center min-h-[calc(100vh-68px)]">
         <form
           onSubmit={onSubmit}
           className="flex flex-col items-start bg-base-300 my-8 border border-primary p-6 rounded-lg shadow-lg w-[95vw] max-w-screen-md mx-4"
