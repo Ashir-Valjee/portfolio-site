@@ -2,6 +2,8 @@ import Image from "next/image";
 import headshot from "@/../public/headshot.jpg";
 import Link from "next/link";
 import HomeAnimation1 from "@/components/HomeAnimation1";
+import About from "@/components/About";
+import Skills2 from "@/components/Skills2";
 import Animation2 from "@/components/Animation2";
 
 export default function HomePage() {
@@ -37,6 +39,12 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      {/* <div id="about">
+        <About />
+      </div>
+      <div id="skills" className="bg-base-200 min-h-[calc(100vh-68px)] pt-10">
+        <Skills2 />
+      </div> */}
     </>
   );
 }

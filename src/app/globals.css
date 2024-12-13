@@ -38,6 +38,9 @@ body {
 /* styles/globals.css or inline styles in your component */
 /* styles/globals.css or inline styles in your component */
 /* styles/globals.css or inline styles in your component */
+html {
+  scroll-behavior: smooth;
+}
 
 @keyframes reflective-background {
   0% {

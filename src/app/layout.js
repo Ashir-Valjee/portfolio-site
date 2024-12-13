@@ -48,7 +48,10 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <ClientThemeWrapper>
             <div className="min-h-screen bg-base-200 px-2">
-              <NavBar />
+              <div className="">
+                <NavBar />
+              </div>
+
               {children}
             </div>
             {/* <Footer /> */}
